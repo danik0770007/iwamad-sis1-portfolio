@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danial Tynymbay | Portfolio</title>
+  <meta name="description" content="Portfolio of Danial Tynymbay, IT Management student and aspiring web developer.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <div class="brand">
+        <h1>Danial Tynymbay</h1>
+        <p>IT Management student, aspiring web developer</p>
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <div class="about">
+        <img src="https://i.pinimg.com/736x/80/b7/81/80b781691d46d7f7a352a349ff48515f.jpg"
+             alt="Portrait avatar of Danial Tynymbay" width="200" height="200">
+        <div>
+          <p>I am a third-year IT Management student at KBTU in Almaty. I got into web development because I like seeing an idea turn into something I can open in a browser and click through.</p>
+          <p>This semester I moved from plain HTML and CSS to JavaScript, Tailwind, Vite and React with TypeScript. I work with Git and GitHub every week, using branches and pull requests.</p>
+          <p>I am aiming to build full-stack applications, and I care about pages that stay readable on a phone as much as on a laptop.</p>
+          <ul class="tags" aria-label="Skills">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>TypeScript</li><li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <ul class="grid">
+        <li class="card">
+          <h3>Personal Profile Page</h3>
+          <p>My first semantic HTML5 page: header, navigation, skills list, a course goals table and a contact form, published from a Git branch.</p>
+          <a href="https://github.com/danik0770007/iwamad-practice/tree/main/week-01">View on GitHub</a>
+        </li>
+        <li class="card">
+          <h3>Interactive Profile Card</h3>
+          <p>A responsive profile card built with Flexbox and the CSS box model, then given a like button in JavaScript and restyled with Tailwind in a Vite project.</p>
+          <a href="https://danik0770007.github.io/iwamad-practice/week-02/">Open live page</a>
+        </li>
+        <li class="card">
+          <h3>Profile Card in React + TypeScript</h3>
+          <p>The same card rebuilt as typed React components: like state with useState and a skills list rendered from data, each item its own component.</p>
+          <a href="https://github.com/danik0770007/iwamad-practice/tree/week-03">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Write to me at <a href="mailto:d_tynymbay@kbtu.kz">d_tynymbay@kbtu.kz</a> or use the form. You can also find my code on <a href="https://github.com/danik0770007">GitHub</a>.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+          <p class="error" id="name-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+          <p class="error" id="email-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+          <p class="error" id="message-error" aria-live="polite"></p>
+        </div>
+        <button type="submit" class="btn">Send message</button>
+        <p class="success" id="form-success" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>&copy; 2026 Danial Tynymbay. Built with plain HTML, CSS and JavaScript.</p></div>
+  </footer>
+</body>
+</html>
